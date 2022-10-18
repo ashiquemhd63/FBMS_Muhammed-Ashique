@@ -1,0 +1,28 @@
+
+<html lang="en">
+<head>
+    
+    <title>Details print</title>
+</head>
+<body>
+    <center>
+        <h3 style="color: blue;">Submitted dstails</h3>
+        <input type="button" name="btnShow" value="Show data" onclick="jacascript:showData();">
+
+        First Name: <label id="1b1FirstName"></label>
+        Welcome <span id="fullName"></span>! your adress is <span id="adress"></span>
+        <script>
+            function showData(){
+                var firstName=localStorage.getItem('firstName');
+                var lastName=localStorage.getItem('lastName');
+                var adress= localStorage.getItem('adress');
+                console.log(firstName);
+                document.getElementById('fullName').innerHTML=firstName+" "+lastName;
+                document.getElementById('adress').innerHTML=adress;
+                document.getElementById('1b1FirstName').innerHTML=firstName;
+            }
+        </script>
+
+    </center>
+</body>
+</html>
