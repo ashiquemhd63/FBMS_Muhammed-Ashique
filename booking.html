@@ -78,15 +78,7 @@
                         <input type="radio" name="gender" id="female" value="2">Female
                     </td>
                 </tr>
-                <tr> 
-                    <td>
-                        <input type="submit" onclick="javascript:saveData();" id="submit">
-                    </td>
-                    <td>
-                        <input type="reset" id="reset" value="reset">
-                    </td>
-                    
-                </tr>
+                
                 <tr>
                     <td>
                         <label for="mobile">Mobile:</label>
@@ -148,6 +140,15 @@
                         <label for="termsandconditions">i agree to <a href="termsandcon.html">terms and conditions</a>  of the website</label>
                     </td>
                 </tr>
+                <tr > 
+                    
+                    <td>
+                        <input type="submit" onclick="javascript:saveData();" id="submit">
+                    
+                        <input type="reset" id="reset" value="reset">
+                    </td>
+                    
+                </tr>
 
             
             
@@ -159,6 +160,12 @@
 
 
             </form>
+            <script>
+                function saveData(){
+                    var firstName=document.getElementById('firstName').value;
+                    console.log(firstName)
+                }
+            </script>
         </table>
         </center>
 </body>
