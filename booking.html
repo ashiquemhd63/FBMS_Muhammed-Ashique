@@ -31,5 +31,135 @@
        
     </table>    
     <a href="index.html">go back to main page</a>
+        <center>
+            <h3>Enter your details</h3>
+            <table cellspacing="2" cellpadding="3">
+            <form action="print.html" method="post">
+            
+                <tr>
+                    <td>
+                        <label for="firstName">First Name: &nbsp; &nbsp;</label>   
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter First Name" name="firstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastName">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" placeholder="Enter Last Name">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adress">Adress: </label>
+                    </td>
+                    <td>
+                        <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Enter your adress"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="dob" name="dob" placeholder="dd-mm-yyyy">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="1"/>Male
+                        <input type="radio" name="gender" id="female" value="2">Female
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <input type="submit" onclick="javascript:saveData();" id="submit">
+                    </td>
+                    <td>
+                        <input type="reset" id="reset" value="reset">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mobile">Mobile:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="mobile" id="mobile">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">Username:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" name="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" id="password">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="contact">Can we contact you?</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="contact" id="contactyes" value="1">yes
+                        <input type="radio" name="contact" id="contactno" value="2">No
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prefference">Communication prefference</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="communication" id="emailcom">Email
+                        <input type="checkbox" name="communication" id="smscom">SMS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="tac" id="tc">
+                    &nbsp;
+                        <label for="termsandconditions">i agree to <a href="termsandcon.html">terms and conditions</a>  of the website</label>
+                    </td>
+                </tr>
+
+            
+            
+            
+
+            
+
+                
+
+
+            </form>
+        </table>
+        </center>
 </body>
 </html>
