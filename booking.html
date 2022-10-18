@@ -41,7 +41,7 @@
                         <label for="firstName">First Name: &nbsp; &nbsp;</label>   
                     </td>
                     <td>
-                        <input type="text" placeholder="Enter First Name" name="firstName">
+                        <input type="text" placeholder="Enter First Name" name="firstName" id="firstName">
                     </td>
                 </tr>
                 <tr>
@@ -49,7 +49,7 @@
                         <label for="lastName">Last Name:</label>
                     </td>
                     <td>
-                        <input type="text" name="lastName" placeholder="Enter Last Name">
+                        <input type="text" name="lastName" placeholder="Enter Last Name" id="lastName">
                     </td>
 
                 </tr>
@@ -163,7 +163,12 @@
             <script>
                 function saveData(){
                     var firstName=document.getElementById('firstName').value;
-                    console.log(firstName)
+                    var lastName=document.getElementById('lastName').value;
+                    var adress=document.getElementById('adress').value;
+
+                    localStorage.setItem('firstName',firstName);
+                    localStorage.setItem('lastName',lastName);
+                    localStorage.setItem('adress',adress);
                 }
             </script>
         </table>
